@@ -94,6 +94,31 @@ function cardNews() {
 
 }
 
+function statusNumbering() {
+ 
+
+
+    const statusListEls = document.querySelectorAll('.status__list > li');
+    statusListEls.forEach(function(statusListEl, index){
+        statusListEl.classList.add(`status${index + 1}`);
+    });
+
+    const statusContEls = document.querySelectorAll('.status__popup > div');
+    statusContEls.forEach(function(statusContEl, index){
+        statusContEl.classList.add(`status${index + 1}`);
+    });
+
+    $('.status__list > li').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+
+        const index = $(this).index();
+        
+        const statusContents = $('.status__popup > div');
+        statusContents.eq(index).addClass('active').siblings().removeClass('active');
+    });
+
+}
+
 //text-animation
 function text_animation() {
 
@@ -328,6 +353,7 @@ $(function () {
     fullpgLayerPop();
     popupzone();
     cardNews();
+    statusNumbering();
     // text_animation();
     // product_slider();
     // history_();
