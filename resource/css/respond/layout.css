@@ -1,0 +1,60 @@
+
+
+/*전체메뉴 1000px 이상*/
+@media(min-width:1000px){
+	.mobile_wrap .layout{ padding: 4rem 2rem;height: calc(100% - 10rem); }
+	.mobile_menu>ul { max-width:1400px;margin:0 auto; }
+	.mobile_menu:before { display: none; }
+	.mobile_menu>ul>li>a { width:100%;height: auto;background: none; border-bottom:1px solid #ddd;padding:0; }
+	.mobile_menu>ul>li>a.on { background: none; }
+	.mobile_menu>ul>li>a.on span { color:#555; }
+	.mobile_menu>ul>li>a>span { padding:2rem;display: inline-block; position: relative; }
+	.mobile_menu>ul>li>a>span:before { content:"";display: block;height: 4px;left:0;bottom:0;width:100%; background: #009fdc; position: absolute; }
+	
+	.mobile_menu>ul>li>.sub { width:100%;position: relative; left:auto; top:auto; display: block !important; padding: 2rem 0; }
+	.mobile_menu>ul>li>.sub>ul { overflow: hidden; }
+	.mobile_menu>ul>li>.sub>ul>li { float: left;width:20%;border-top:0; }
+	.mobile_menu>ul>li>.sub>ul>li>a:before { display: none; padding:0; }
+    .mobile_menu>ul>li>.sub>ul>li>a.on { border:0; }
+	.mobile_menu>ul>li>.sub>ul>li>a.on+ul { border:0; }
+	.mobile_menu ul>li>.sub>ul>li>ul { display: block !important;border-top:0; }
+	.mobile_menu ul>li>.sub>ul>li>ul>li>a { background: none;border-top:0;font-size: 1.5rem; }
+	.mobile_menu>ul>li>.sub>ul>li>a[target="_blank"] span:after { position: relative; display: inline-block; top:auto;right:auto; transform: none; margin-left:1rem; vertical-align: middle; }
+	
+	.mobile_wrap { background: #fff;right:auto;height: 100%; }
+	.mobile_wrap.on { opacity: 1; }
+	.mobile_wrap.on .mobile_menu>ul { overflow-y: auto;height: calc(100% - 10rem); }
+	.mobile_menu ul li a[target="_blank"] span:after { position: relative; display: inline-block; top:auto;right:auto; transform: none; margin-left:1rem; vertical-align: middle; }
+	
+}
+
+/*반응형*/
+@media (max-width:1400px){
+	.layout { padding:0 2rem; }
+	#header .layout #gnb_wrap .logo { left:2rem; }
+
+}
+
+@media (max-width:1200px){
+	#lnb { display: none; }
+	#content_wrap { margin-left:0; }
+}
+
+@media (max-width:1000px){
+	#header .all_menu { display: block; }
+	#header .layout #gnb_wrap #gnb { display: none !important; }
+	.mobile_wrap .layout{ padding:0; }
+	#header .search_box  { padding: 4rem 2rem; }
+    #header .search_box .search_wrap { width:100%; }
+    .mobile_wrap { width:50rem; }
+}
+
+@media (max-width:640px){
+	#footer .layout .inner { padding:0;text-align: center; }
+	#footer .layout .inner .f_logo { position: relative; left:auto; top: auto; display: inline-block; margin-bottom:2rem; }
+	#footer .layout .inner .select_box { position: relative; top:auto; right: auto; transform: none;margin:0 auto;width:20rem; margin-top:2rem; }
+	.sub_visual { padding: 11rem 0; }
+	.snb { display: none; }
+	.page_topBtn { bottom:6rem;right:2rem; }
+}
+

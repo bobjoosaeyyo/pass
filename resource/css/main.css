@@ -1,0 +1,346 @@
+/* common */
+.section {
+    position: relative;
+}
+
+.section::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/resource/images/main/section01-bg.jpg)no-repeat center center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 타이틀 */
+
+.section__title {
+    margin-bottom: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.section__title strong {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.section__title span {
+    display: block;
+    font-size: 3.9rem;
+    font-weight: 400;
+}
+
+.section__title p {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.section__title .section__title--bigger {
+    font-size: 6.3rem;
+    font-weight: 600;
+}
+
+/* 소제목 */
+
+.con-title {
+    display: block;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* 슬라이더 네비게이션 */
+
+.arrow {
+    display: block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.59);
+    position: relative;
+}
+
+.arrow::before {
+    display: block;
+    font-family: 'xeicon';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.arrow.prev::before {
+    content: "\e944";
+}
+
+.arrow.next::before {
+    content: "\e941";
+}
+
+.arrow:hover {
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.16);
+    background: #F79447;
+    border: 1px solid #f79447;
+}
+
+.state {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.state button {
+    display: none;
+    position: relative;
+}
+
+.state button.state--active {
+    display: block;
+}
+
+.state button::before {
+    display: block;
+    font-family: 'xeicon';
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.state button.start::before {
+    content: "\ea3e";
+}
+
+.state button.pause::before {
+    content: "\ea3b";
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.slider-dots {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slider-dots .slick-dots {
+    overflow: hidden;
+}
+
+.slider-dots li {
+    display: block;
+    margin: .1rem .65rem 0;
+    float: left;
+}
+
+.slider-dots li.slick-active button {
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.13);
+}
+
+.slider-dots li button {
+    text-indent: -9999px;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #E5E0DA;
+    cursor: pointer;
+}
+
+/* section01 비주얼 */
+
+#section01::before {
+    background: url(/resource/images/main/section01-bg.jpg)no-repeat center center / cover;
+}
+
+#section01 .visual {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#section01 .section__title {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    width: calc(100% - 45rem);
+    padding-right: 5rem;
+    text-align: left;
+}
+
+#section01 .visual__popup {
+    display: table-cell;
+    vertical-align: middle;
+    width: 45rem;
+}
+
+#section01 .popupzone {
+    padding-left: 6.8rem;
+    position: relative;
+}
+
+#section01 .popupzone__navi {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#section01 .popupzone__navi .arrow {
+    margin: 1.5rem 0;
+}
+
+#section01 .popupzone__slider {
+    margin-bottom: -3rem;
+}
+
+#section01 .popupzone__slider .slick-slide {
+    margin-bottom: 3rem;
+}
+
+/* 사이버교육센터 */
+
+.cyber-education {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 7.2rem);
+    transform: translateY(-50%);
+    width: 10.4rem;
+    border-radius: 1rem;
+    background: #fff;
+    padding: 2rem 1.4rem;
+    text-align: center;
+}
+
+.cyber-education img {
+    max-width: 100%;
+}
+
+.cyber-education__sns {
+        margin-top: .5rem;
+}
+
+.cyber-education__sns li {
+    border-top: 2px dashed #C5C5C5;
+}
+
+.cyber-education__sns li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -.1em;
+    text-align: left;
+    padding-left: 2.2rem;
+    position: relative;
+}
+
+.cyber-education__sns li a::before {
+    display: block;
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.cyber-education__sns li.facebook a::before {
+    background: url(/resource/images/main/facebook.png)no-repeat center center / cover;
+}
+
+.cyber-education__sns li.blog a::before {
+    background: url(/resource/images/main/blog.png)no-repeat center center / cover;
+}
+
+.cyber-education__sns li.youtube a::before {
+    background: url(/resource/images/main/youtube.png)no-repeat center center / cover;
+}
+
+/* section02 알림마당 */
+
+#section02::before {
+    background: url(/resource/images/main/section02-bg.jpg)no-repeat center center / cover;
+}
+
+.slick-track:before, .slick-track:after {
+    display: none;
+}
+
+#section02 .notification {
+    display: table;
+    table-layout: fixed;
+    width: calc(100% + 10.6rem);
+    border-collapse: separate;
+    border-spacing: 5.3rem 0;
+    margin: 0 -5.3rem;
+}
+
+#section02 .notification > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#section02 .inner {
+    height: 41.2rem;
+}
+
+/* 알림마당 > 사회서비스중앙지원단 */
+
+#section02 .introduce .inner {
+    margin: -2rem 0;
+    height: calc(41.2rem + 4rem);
+}
+
+#section02 .introduce .inner > div {
+    height: 33.3333%;
+    padding: 2rem 0;
+}
+
+#section02 .introduce__btn {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#section02 .introduce__btn strong {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#section02 .introduce__btn strong span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    height: 100%;
+}
+
+#section02 .introduce__business a {
+    background: linear-gradient(to bottom, #C5D934, #8BB929);
+}
+
+#section02 .introduce__organization a {
+    background: linear-gradient(to bottom, #08DFE6, #0099DB);
+}
+
+#section02 .introduce__direction a {
+    background: linear-gradient(to bottom, #F2C327, #F28427);
+}

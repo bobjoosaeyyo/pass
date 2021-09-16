@@ -1,0 +1,160 @@
+<!--header-->
+<?php include($_SERVER['DOCUMENT_ROOT'].'/html/include/sub-header.html'); ?>
+
+<!--sub-visual-->
+<div id="sub-visual" class="sub01-visual">
+    <div class="layout">
+        <div class="sub-visual-txt">
+            <div class="location">
+                <a href="#">depth1</a>
+                <i class="xi-angle-right-min"></i>
+                <a href="#">depth2</a>
+                <i class="xi-angle-right-min"></i>
+                <a href="#">depth3</a>
+            </div>
+            <strong class="sub-visual-title">Sub Visual Title</strong>
+        </div>
+        <!--btn depth2-->
+        <div class="depth2">
+            <ul>
+                <li class="active"><a href="#"><span>depth2</span></a></li>
+                <li><a href="#"><span>depth2</span></a></li>
+                <li><a href="#"><span>depth2depth2</span></a></li>
+                <li><a href="#"><span>depth2depth2depth2depth2</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>   
+    .pop-open {
+        font-size: 3rem;
+        display: block;
+        width: 30rem;
+        max-width: 100%;
+        text-align: center;
+        padding: 1.5rem 0;
+        border: 1px solid #ddd;
+        margin: 2rem auto;
+    }
+</style>
+
+
+<div id="pop">
+    <div class="popup-layout">
+        <div class="flow">
+            <div class="popup-contents">
+                <a href="#" class="close"><i class="xi-close"></i></a>
+                <strong class="title">고객문의</strong>
+                <div class="popup-form">
+                    <div>
+                        <strong class="form-title"><label for="fname">이름</label></strong>
+                        <div><input type="text" id="fname" placeholder="이름을 입력해주세요."></div>
+                    </div>
+                    <div>
+                        <strong class="form-title"><label for="fcompany">회사</label></strong>
+                        <div><input type="text" id="fcompany" placeholder="회사명을 입력해주세요."></div>
+                    </div>
+                    <div>
+                        <strong class="form-title"><label for="femail">이메일</label></strong>
+                        <div><input type="text" id="femail" placeholder="이메일주소를 입력해주세요."></div>
+                    </div>
+                    <div>
+                        <strong class="form-title"><label for="ftel">연락처</label></strong>
+                        <div><input type="text" id="ftel" placeholder="연락처를 입력해주세요."></div>
+                    </div>
+                    <div class="full">
+                        <strong class="form-title">개인정보취급방침</strong>
+                        <div class="fprivacy">
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos quidem, commodi velit
+                                quisquam assumenda. Modi tenetur quia dolores, consequuntur libero repellat, officiis
+                                rem
+                                atque placeat non excepturi voluptates unde.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus accusantium
+                                repellendus, nobis ex at, iusto, tempore reiciendis architecto asperiores minima! Facere
+                                amet repellendus, nihil et debitis cupiditate velit ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nihil eos quidem, commodi velit
+                                quisquam assumenda. Modi tenetur quia dolores, consequuntur libero repellat, officiis
+                                rem
+                                atque placeat non excepturi voluptates unde.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus accusantium
+                                repellendus, nobis ex at, iusto, tempore reiciendis architecto asperiores minima! Facere
+                                amet repellendus, nihil et debitis cupiditate velit ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nihil eos quidem, commodi velit
+                                quisquam assumenda. Modi tenetur quia dolores, consequuntur libero repellat, officiis
+                                rem
+                                atque placeat non excepturi voluptates unde.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus accusantium
+                                repellendus, nobis ex at, iusto, tempore reiciendis architecto asperiores minima! Facere
+                                amet repellendus, nihil et debitis cupiditate velit ratione! Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nihil eos quidem, commodi velit
+                                quisquam assumenda. Modi tenetur quia dolores, consequuntur libero repellat, officiis
+                                rem
+                                atque placeat non excepturi voluptates unde.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus accusantium
+                                repellendus, nobis ex at, iusto, tempore reiciendis architecto asperiores minima! Facere
+                                amet repellendus, nihil et debitis cupiditate velit ratione!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-check">
+                    <div class="checks">
+                        <span class="agree">
+                            <input type="checkbox" id="agree1" name="agree" value="Y" detect="false"
+                                detect-check="false">
+                            <label for="agree1">개인정보수집 및 활용동의</label>
+                        </span>
+                    </div>
+                    <div class="checks">
+                        <span class="agree">
+                            <input type="checkbox" id="agree2" name="agree" value="Y" detect="false"
+                                detect-check="false">
+                            <label for="agree2">개인정보수집 및 활용동의</label>
+                        </span>
+                    </div>
+                </div>
+                <button type="button" class="send"><span>문의하기</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(function(){
+        
+        function pop() {
+            $('.pop-open').on('click',function(){
+            $(this).add('active');
+            $('#pop').addClass('active');
+
+            return false;
+        });
+
+        $('#pop .close').on('click',function(){
+            $('.pop-open').removeClass('active');
+            $('#pop').removeClass('active');
+
+            return false;
+        });
+
+            $(".fprivacy").mCustomScrollbar({
+                axis: "y",
+                theme: "light-3",
+                scrollbarPosition: "inside",
+                value: "auto",
+            });
+        }
+
+        pop();
+    });
+</script>
+
+<a href="#" class="pop-open">팝업을 열어주세요</a>
+
+
+
+   <!--footer-->
+   <?php include($_SERVER['DOCUMENT_ROOT'].'/html/include/sub-footer.html'); ?>
