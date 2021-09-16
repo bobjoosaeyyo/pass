@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css-->
     <link rel="stylesheet" href="/resource/css/general.css">
     <link rel="stylesheet" href="/resource/fonts/xeicon/xeicon.min.css">
     <link rel="stylesheet" href="/resource/js/slick/slick.css">
@@ -16,6 +18,8 @@
     <link rel="stylesheet" href="/resource/css/font.css">
     <link rel="stylesheet" href="/resource/css/respond/main.css">
     <link rel="stylesheet" href="/resource/css/respond/layout.css">
+
+    <!--js-->
     <script src="/resource/js/jquery-3.5.1.min.js"></script>
     <script src="/resource/js/jquery-ui.min.js"></script>
     <script src="/resource/js/fullpage.js"></script>
@@ -38,8 +42,12 @@
             <a href="#gnb">주메뉴 바로가기</a>
             <a href="#container">본문 바로가기</a>
         </div>
+
         <!--header-->
-        <?php include($_SERVER['DOCUMENT_ROOT'].'/resource/include/header.html'); ?>
+        <header id="header"></header>
+        <div class="mobile_wrap"></div>
+
+
 
         <!--main-->
         <div id="container">
@@ -136,8 +144,8 @@
                                             <strong><span>사업안내</span></strong></a>
                                     </div>
                                     <div class="introduce__organization">
-                                        <a  href="#" class="introduce__btn">
-                                            <strong ><span>조직도</span></strong></a>
+                                        <a href="#" class="introduce__btn">
+                                            <strong><span>조직도</span></strong></a>
                                     </div>
                                     <div class="introduce__direction">
                                         <a href="#" class="introduce__btn">
@@ -484,7 +492,7 @@
                     </div>
                 </section>
                 <!--footer-->
-                <?php include($_SERVER['DOCUMENT_ROOT'].'/resource/include/footer.html'); ?>
+                <footer id="footer" class="footer section fp-auto-height fp-section fp-table active-start fp-completely"></footer>
 
             </div>
         </div>
