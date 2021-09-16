@@ -133,8 +133,16 @@ function enterkey() {
     })
 }
 
+function include() {
+        $('#header').load("/resource/include/header.html");
+        $('.mobile_wrap').load("/resource/include/mobile-menu.html");
+        $('#footer').load("/resource/include/footer.html");
+}
+
+
 $(function () {
 
+    include();
     smooth_scroll();
     siteMap();
     search();
