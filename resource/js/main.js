@@ -348,6 +348,8 @@ function insight() {
 }
 
 
+
+
 $(function () {
 
     fullpgLayerPop();
@@ -372,8 +374,6 @@ $(function () {
     // $(window).resize(function () {
     //     country();
     // });
-
-
 
 
 });
