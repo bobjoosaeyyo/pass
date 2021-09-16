@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.367" height="57.796" viewBox="0 0 50.367 57.796">
+  <defs>
+    <filter id="타원_5049" x="0" y="0" width="50.367" height="50.977" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_21507" x="3.663" y="26.972" width="42.937" height="30.825" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_15123" data-name="그룹 15123" transform="translate(9 -116.922)">
+    <g transform="matrix(1, 0, 0, 1, -9, 116.92)" filter="url(#타원_5049)">
+      <ellipse id="타원_5049-2" data-name="타원 5049" cx="16.183" cy="16.489" rx="16.183" ry="16.489" transform="translate(9 6)" fill="#f79447"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, 116.92)" filter="url(#패스_21507)">
+      <path id="패스_21507-2" data-name="패스 21507" d="M12.417,0,24.937,12.825H0Z" transform="translate(37.6 45.8) rotate(180)" fill="#f79447"/>
+    </g>
+  </g>
+</svg>
