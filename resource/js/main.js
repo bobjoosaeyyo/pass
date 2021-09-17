@@ -119,6 +119,18 @@ function statusNumbering() {
 
 }
 
+function mainBoard() {
+    $('.information .con-title strong').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+
+        const index = $(this).index();
+        
+        const boardContents = $('.information__board > div');
+        // boardContents.eq(index).addClass('active').siblings().removeClass('active');
+        boardContents.eq(index).addClass('active').siblings().removeClass('active');
+    });
+}
+
 //text-animation
 function text_animation() {
 
@@ -356,6 +368,7 @@ $(function () {
     popupzone();
     cardNews();
     statusNumbering();
+    mainBoard();
     // text_animation();
     // product_slider();
     // history_();

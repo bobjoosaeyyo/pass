@@ -646,6 +646,7 @@
     color: #eee;
     opacity: 0.8;
     font-weight: 400;
+    cursor: pointer;
 } 
 
 #section03 .information__left .con-title strong:first-of-type {
@@ -690,7 +691,7 @@
     margin: 0 -3.4rem;
 }
 
-#section03 .information__board > div:first-of-type {
+#section03 .information__board > div.active {
     display: table;
 }
 
